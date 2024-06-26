@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #02199e58; /* Cor de fundo geral */
+  color: #333; /* Cor do texto principal */
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 300px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: #5900ff; /* Cor roxa para os links */
+}
+
+.content {
+  align-items: center;
+  background-size: auto 150px;
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10px;
+  padding-top: 90px;
+  overflow-y: auto;
+}
+
+.input {
+  color: #333; /* Cor do texto nos inputs */
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Borda dos inputs */
+  background-color: #fff; /* Cor de fundo dos inputs */
+}
+
+.input::placeholder {
+  color: #aaa; /* Cor do placeholder nos inputs */
+}
+
+.btn {
+  background-color: #6f42c1; /* Cor de fundo roxa para os botões */
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* Cor do texto nos botões */
+  padding: 8px 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+}
+
+.btn:hover {
+  background-color: #5a3e99; /* Cor de fundo roxa mais escura ao passar o mouse */
+}
+
+.mb-5 {
+  margin-bottom: 20px;
+}
+
+.addMarkerDialog {
+  background-color: #fff; /* Cor de fundo do diálogo */
+  font-size: 14px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px;
+  z-index: 1;
+}
